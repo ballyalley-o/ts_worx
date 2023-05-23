@@ -4,9 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const logger_1 = require("./helpers/logger");
+const works_1 = __importDefault(require("./routes/works"));
 const PORT = process.env.PORT || 3000;
 const app = (0, express_1.default)();
+app.use(express_1.default.json());
+app.use('/works', works_1.default);
 app.listen(PORT, () => {
-    (0, logger_1.vanillaLogger)('SERVER STATUS: Running on PORT:', +PORT, 'bgGreen');
+    // vanillaLogger('SERVER STATUS: Running on PORT:', 3000);
+    console.log(`SERVER STATUS: Running on PORT: ${PORT}`);
 });

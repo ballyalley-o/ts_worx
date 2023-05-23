@@ -2,8 +2,8 @@ import colors from 'colors';
 import dotenv from 'dotenv/config';
 
 
-const vanillaLogger = (message: string, port: number, color: any) => {
-    console.log(`${message}${port}`[color])
+const vanillaLogger = (message: string, port: number) => {
+    console.log(`${message}${port}`.bgYellow)
 };
 
 const errorLogger = (message: string) => {
