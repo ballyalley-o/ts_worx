@@ -3,6 +3,8 @@ export interface Worker {
     firstName: string,
     lastName: string,
     fullName: string,
+    email: string,
+    phone: string,
     jobs: string[],
 
 

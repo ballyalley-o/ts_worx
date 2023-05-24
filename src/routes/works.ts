@@ -1,6 +1,6 @@
 import { Router }from 'express';
 import { Work } from '../models/Work';
-import { getWorkQueue, addWorkQueue, updateWorkQueue, deleteWorkQueue } from '../controllers/works';
+import { getWorkQueue, addWorkQueue, updateWorkQueue, deleteWorkQueue } from '../../controllers/works';
 
 let works: Work[] = [];
 const router = Router();
