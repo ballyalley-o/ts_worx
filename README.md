@@ -12,6 +12,4 @@
 
 <div align="center">
 
-<h1>UNDER DEVELOPMENT</h1>
-
 </div>
